@@ -39,7 +39,7 @@ const Navbar = ({ darkMode, setDarkMode, lang, translations, toggleLang }) => {
         </button>
         <button
           className="theme-toggle-navbar"
-          onClick={() => setDarkMode((v) => !v)}
+          onClick={() => setDarkMode(!darkMode)}
           aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
         >
           {darkMode

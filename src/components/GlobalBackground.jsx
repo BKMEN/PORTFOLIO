@@ -26,6 +26,7 @@ export default function GlobalBackground({ darkMode }) {
       gyroControls: false,
       scale: 1.0,
       scaleMobile: 1.0,
+      vertexColors: false, // Soluciona el warning de Three.js moderno
     });
     return () => {
       if (vantaEffect.current) {

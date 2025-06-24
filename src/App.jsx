@@ -69,7 +69,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/PORTFOLIO">
       <motion.div
         key={theme}
         initial={{ backgroundColor: bgColors[theme === 'light' ? 'dark' : 'light'] }}

@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const works = [
-  { src: '/assets/work1.jpg', title: 'Editorial 2024' },
-  { src: '/assets/work2.jpg', title: 'Fashion Week' },
-  { src: '/assets/work3.jpg', title: 'Comercial Beauty' },
+  { src: import.meta.env.BASE_URL + 'work1.jpg', title: 'Editorial 2024' },
+  { src: import.meta.env.BASE_URL + 'work2.jpg', title: 'Fashion Week' },
+  { src: import.meta.env.BASE_URL + 'work3.jpg', title: 'Comercial Beauty' },
   // Agrega más trabajos aquí
 ];
 
