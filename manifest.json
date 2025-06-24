@@ -1,0 +1,26 @@
+{
+  "name": "Yovan Castro Portfolio",
+  "short_name": "YovanCastro",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Portafolio profesional de modelo Yován Castro",
+  "icons": [
+    {
+      "src": "/PORTFOLIO/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/PORTFOLIO/apple-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/PORTFOLIO/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
