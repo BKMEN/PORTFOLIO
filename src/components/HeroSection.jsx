@@ -2,6 +2,13 @@ import React from 'react';
 import './HeroSection.css';
 import { motion } from 'framer-motion';
 
+const getProfileImgSrc = () => {
+  // Vite expone import.meta.env.MODE
+  return import.meta.env.MODE === 'production'
+    ? '/PORTFOLIO/PERFIL.JPEG'
+    : '/PERFIL.JPEG';
+};
+
 const HeroSection = ({ lang, translations }) => (
   <section className="hero-section" id="about">
     <motion.div
@@ -12,9 +19,17 @@ const HeroSection = ({ lang, translations }) => (
       className="hero-content"
     >
       <img
-        src="/src/media/PERFIL.JPEG"
+        src={getProfileImgSrc()}
         alt="Yován Castro"
         className="hero-photo"
+        onError={e => {
+          e.target.onerror = null;
+          e.target.style.display = 'none';
+          e.target.parentNode.insertAdjacentHTML(
+            'beforeend',
+            `<div class='hero-photo-fallback'>Yován Castro</div>`
+          );
+        }}
       />
       <div className="hero-text">
         <h1>Yován Castro</h1>
