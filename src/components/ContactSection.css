@@ -48,3 +48,34 @@
   color: #4aaf50;
   margin-top: 0.5rem;
 }
+
+@media (max-width: 700px) {
+  .contact-form {
+    max-width: 95vw;
+    padding: 0.5rem;
+  }
+  .contact-section {
+    padding: 1rem 0;
+  }
+}
+
+body.dark .contact-section,
+body.dark .contact-section h2,
+body.dark .contact-form,
+body.dark .contact-form input,
+body.dark .contact-form textarea,
+body.dark .contact-form button,
+body.dark .sent-msg,
+body.dark .contact-extra,
+body.dark .contact-extra a {
+  background: #23233a !important;
+  color: #f8fafc !important;
+  border-color: #444 !important;
+}
+body.dark .contact-form button {
+  background: #f8fafc !important;
+  color: #23233a !important;
+}
+body.dark .contact-form button:hover {
+  background: #bfc0c7 !important;
+}

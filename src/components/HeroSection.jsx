@@ -12,12 +12,13 @@ const HeroSection = () => (
     >
       <img
         src="/assets/model-placeholder.jpg"
-        alt="Modelo principal"
+        alt="Yován Castro"
         className="hero-photo"
       />
       <div className="hero-text">
-        <h1>Tu Nombre</h1>
-        <p>Modelo profesional | Fashion | Editorial | Comercial</p>
+        <h1>Yován Castro</h1>
+        <p>Modelo profesional | Madrid, España | Colombiano</p>
+        <p className="hero-sub">Delgado / Ectomorfo / Atlético</p>
       </div>
     </motion.div>
   </section>

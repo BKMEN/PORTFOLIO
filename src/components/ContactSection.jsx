@@ -17,7 +17,7 @@ const ContactSection = () => {
 
   return (
     <section className="contact-section">
-      <h2>Contacto</h2>
+      <h2>Contacto directo</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
           type="text"
@@ -45,6 +45,10 @@ const ContactSection = () => {
         <button type="submit">Enviar</button>
         {sent && <p className="sent-msg">¡Mensaje enviado! (demo)</p>}
       </form>
+      <div className="contact-extra">
+        <p>Email: <a href="mailto:yovanjcd@icloud.com">yovanjcd@icloud.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/34602469821" target="_blank" rel="noopener noreferrer">602469821</a></p>
+      </div>
     </section>
   );
 };

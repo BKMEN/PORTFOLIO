@@ -38,3 +38,23 @@
   font-weight: 600;
   color: #22223b;
 }
+
+@media (max-width: 700px) {
+  .measures-content {
+    padding: 1rem;
+    min-width: 180px;
+    max-width: 95vw;
+  }
+  .measures-section {
+    padding: 1rem 0;
+  }
+}
+
+body.dark .measures-content,
+body.dark .measures-section,
+body.dark .measures-content h2,
+body.dark .measures-content li,
+body.dark .measures-content li span {
+  background: #23233a !important;
+  color: #f8fafc !important;
+}

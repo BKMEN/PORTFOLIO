@@ -3,12 +3,16 @@ import './MeasuresSection.css';
 import { motion } from 'framer-motion';
 
 const measures = [
-  { label: 'Altura', value: '1.75 m' },
-  { label: 'Busto', value: '85 cm' },
-  { label: 'Cintura', value: '60 cm' },
-  { label: 'Cadera', value: '90 cm' },
-  { label: 'Zapato', value: '38 EU' },
-  // Agrega más medidas si lo deseas
+  { label: 'Edad', value: '22 años' },
+  { label: 'Altura', value: '1,80 m' },
+  { label: 'Pecho', value: '90 cm' },
+  { label: 'Cintura', value: '70 cm' },
+  { label: 'Cadera', value: '80 cm' },
+  { label: 'Cabello', value: 'Negro' },
+  { label: 'Ojos', value: 'Negro' },
+  { label: 'Nacionalidad', value: 'Colombiano' },
+  { label: 'Ubicación', value: 'Madrid, España' },
+  { label: 'Tipo de cuerpo', value: 'Delgado / Ectomorfo / Atlético' },
 ];
 
 const MeasuresSection = () => (

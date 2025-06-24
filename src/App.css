@@ -1,8 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: none;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .logo {
@@ -39,4 +51,63 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@media (max-width: 900px) {
+  #root {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 0.5rem;
+  }
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 1000;
+  background: #22223b;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.theme-toggle:hover {
+  background: #4a4e69;
+}
+
+body.dark {
+  background: #181824;
+  color: #f8fafc;
+}
+body.dark .hero-section,
+body.dark .gallery-section,
+body.dark .measures-section,
+body.dark .contact-section,
+body.dark .social-section {
+  background: #23233a !important;
+  color: #f8fafc !important;
+}
+body.dark .hero-content,
+body.dark .gallery-item,
+body.dark .measures-content,
+body.dark .contact-form {
+  background: #23233a !important;
+  color: #f8fafc !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+body.dark .theme-toggle {
+  background: #f8fafc;
+  color: #22223b;
+}
+body.dark .theme-toggle:hover {
+  background: #bfc0c7;
 }
