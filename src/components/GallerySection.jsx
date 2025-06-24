@@ -1,6 +1,7 @@
 import React from 'react';
 import './GallerySection.css';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const works = [
   { src: '/assets/work1.jpg', title: 'Editorial 2024' },
@@ -9,9 +10,9 @@ const works = [
   // Agrega más trabajos aquí
 ];
 
-const GallerySection = () => (
-  <section className="gallery-section">
-    <h2>Trabajos Destacados</h2>
+const GallerySection = ({ lang, translations }) => (
+  <section className="gallery-section" id="gallery">
+    <h2>{translations.featuredWorks}</h2>
     <div className="gallery-grid">
       {works.map((work, idx) => (
         <motion.div
@@ -26,6 +27,11 @@ const GallerySection = () => (
           <span>{work.title}</span>
         </motion.div>
       ))}
+    </div>
+    <div className="gallery-more-btn-wrap">
+      <Link to="/gallery" className="gallery-more-btn">
+        {lang === 'es' ? 'MÁS IMÁGENES' : 'MORE PHOTOS'}
+      </Link>
     </div>
   </section>
 );

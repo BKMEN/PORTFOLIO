@@ -25,12 +25,41 @@
   color: #22223b;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .social-links {
-    gap: 1rem;
+    gap: 1.2rem;
   }
   .social-links a {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 700px) {
+  .social-links {
+    gap: 0.7rem;
+  }
+  .social-links a {
+    font-size: 1.2rem;
+  }
+}
+
+.instagram-embed iframe {
+  width: 100% !important;
+  max-width: 480px !important;
+  height: 600px !important;
+  min-height: 400px;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 900px) {
+  .instagram-embed iframe {
+    max-width: 98vw !important;
+    height: 500px !important;
+  }
+}
+@media (max-width: 700px) {
+  .instagram-embed iframe {
+    max-width: 100vw !important;
+    height: 350px !important;
   }
 }
 

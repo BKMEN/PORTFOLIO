@@ -8,7 +8,7 @@ const socials = [
   { icon: <FaWhatsapp />, url: 'https://wa.me/34602469821', label: 'WhatsApp' },
 ];
 
-const SocialSection = () => {
+const SocialSection = ({ lang, translations }) => {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const SocialSection = () => {
 
   return (
     <section className="social-section">
-      <h2>Contacto y Redes</h2>
+      <h2>{translations.social}</h2>
       <div className="social-links">
         {socials.map((s, idx) => (
           <a href={s.url} key={idx} target="_blank" rel="noopener noreferrer" aria-label={s.label}>

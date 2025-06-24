@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ContactSection.css';
 
-const ContactSection = () => {
+const ContactSection = ({ lang, translations }) => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [sent, setSent] = useState(false);
 
@@ -16,13 +16,13 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="contact-section">
-      <h2>Contacto directo</h2>
+    <section className="contact-section" id="contact">
+      <h2>{translations.directContact}</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
-          placeholder="Nombre"
+          placeholder={lang === 'es' ? 'Nombre' : 'Name'}
           value={form.name}
           onChange={handleChange}
           required
@@ -30,20 +30,20 @@ const ContactSection = () => {
         <input
           type="email"
           name="email"
-          placeholder="Correo electrónico"
+          placeholder={lang === 'es' ? 'Correo electrónico' : 'Email'}
           value={form.email}
           onChange={handleChange}
           required
         />
         <textarea
           name="message"
-          placeholder="Mensaje"
+          placeholder={lang === 'es' ? 'Mensaje' : 'Message'}
           value={form.message}
           onChange={handleChange}
           required
         />
-        <button type="submit">Enviar</button>
-        {sent && <p className="sent-msg">¡Mensaje enviado! (demo)</p>}
+        <button type="submit">{lang === 'es' ? 'Enviar' : 'Send'}</button>
+        {sent && <p className="sent-msg">{lang === 'es' ? '¡Mensaje enviado! (demo)' : 'Message sent! (demo)'}</p>}
       </form>
       <div className="contact-extra">
         <p>Email: <a href="mailto:yovanjcd@icloud.com">yovanjcd@icloud.com</a></p>
