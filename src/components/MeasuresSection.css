@@ -1,0 +1,40 @@
+.measures-section {
+  background: #e0e7ef;
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.measures-content {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem;
+  min-width: 320px;
+  max-width: 400px;
+}
+
+.measures-content h2 {
+  text-align: center;
+  color: #22223b;
+  margin-bottom: 1.2rem;
+}
+
+.measures-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.measures-content li {
+  font-size: 1.1rem;
+  color: #4a4e69;
+  margin-bottom: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.measures-content li span {
+  font-weight: 600;
+  color: #22223b;
+}

@@ -1,0 +1,26 @@
+.social-section {
+  background: #f8fafc;
+  padding: 2rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.social-section h2 {
+  color: #22223b;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-links a {
+  font-size: 2.2rem;
+  color: #4a4e69;
+  transition: color 0.2s;
+}
+
+.social-links a:hover {
+  color: #22223b;
+}
